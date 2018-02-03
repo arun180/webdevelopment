@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>'
+    <link rel="stylesheet" type="text/css" href="CSS/coursecata.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+
+        .desc-image img {width:100%;}
+        .desc-title h2 {font-weight:700;font-size: 40px}
+        .desc-title h4 {font-weight:700;}
+        .desc-title p { font-size: 32px}
+    </style>
+</head>
+<body>
+<div style=" position:relative ;left: 40%;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/UMKC_logo.png" style="width: 200px">
+    <h1> Course Registration </h1>
+
+</div>
+
+<div class="description-section" >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3  " style="margin-top: 5%">
+                <div class="desc-image">
+                    <img src="../SampleImages/web-design.jpg " >
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="desc-title">
+                    <h2>COMP-SCI 5542 - Advance Software Engineering</h2>
+                    <table class="table">
+                        <thead>
+                        <tr class="table-primary">
+
+                            <th>Instructor</td>
+                            <th>Total Seats</th>
+                            <th>Available Seats</th>
+                        </tr>
+                        </thead>
+                        <tbody style="background: ">
+                        <tr>
+                            <td>Yugyung Lee</td>
+                            <td>30</td>
+                            <td>19</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!--</div>-->
+
+                </div>
+                <br>
+
+
+
+                <div class="container" style="width: 50%">
+                    <div class="row">
+                        <div class="col-md-4" id="demo1">
+                            <a href="#"  class=" btn btn-block btn-primary btn-secondary" onclick="myFunction()"><span class="glyphicon glyphicon-user"></span> Enroll </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="myDIV" style="display: none ;width: 100%; color: green" >
+                    <h1> You are successfully Registeted to this course </h1>
+                    <h1> seats left : 22 </h1>
+
+                </div>
+
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("myDIV");
+                        if (x.style.display === "none") {
+                            x.style.display = "block";
+                            var y = document.getElementById("demo")
+                            y.innerHTML=" 18"
+                            document.getElementById("demo1").style.display="none";
+                        } else {
+                            x.style.display = "none";
+                        }
+                    }
+                </script>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

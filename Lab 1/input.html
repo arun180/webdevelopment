@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+      function mybFunction() {
+          window.location= "course.html"
+      }
+  </script>
+</head>
+<body>
+<div class="container">
+
+
+  <<div style=" position:relative ;left: 40%;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/UMKC_logo.png" style="width: 200px">
+  <h1> Course Registration </h1>
+
+</div>
+
+
+  <label for="exampleFormControlSelect1"> Degree </label>
+  <select class="form-control" id="exampleFormControlSelect1">
+    <option>Bachelors</option>
+    <option>Masters</option>
+  </select>
+
+  <label for="exampleFormControlSelect1"> Level of Education </label>
+  <select class="form-control" id="exampleFormControlSelect2">
+    <option> Accounting</option>
+    <option>Biology</option>
+    <option> Chemistry</option>
+    <option>Civil engineering</option>
+    <option> Computer Science</option>
+    <option> Economics</option>
+    <option>Finance</option>
+    <option>Law</option>
+  </select>
+
+  <label for="exampleFormControlSelect1"> Semester </label>
+
+
+  </select>
+
+  <div class="container" style="position:absolute ;">
+    <div class="form-check" >
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+      <label class="form-check-label" for="exampleRadios1">
+        Fall Semester
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+      <label class="form-check-label" for="exampleRadios2">
+        Sping Semester
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+      <label class="form-check-label" for="exampleRadios3">
+        Summer Semester
+      </label>
+    </div>
+    <div style="position : absolute; left: 50%;">
+      <button type="button"   onclick="mybFunction()"  class="btn btn-primary">Search</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
