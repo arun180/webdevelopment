@@ -1,0 +1,36 @@
+body
+{ 	background-color : black;
+    align-center: center;
+
+}
+h1
+{	color: purple;
+    font-family: calibri;
+    font-size: 55px;
+}
+h2
+{	color: purple;
+    font-family: calibri;
+    font-size: 35px;
+}
+h3
+{   color: white;
+    font-family: calibri;
+}
+.weatherModule {
+    background: #f2f2f2;
+    height: 150px;
+    width: 250px;
+    border: 1px dashed #ccc;
+    padding: 1em;
+}
+.form-control {
+    float: left;
+    margin-right: 10px;
+    width: 70%;
+}
+
+.forecast-img {
+    margin-right: 10px;
+    width: 45px;
+}

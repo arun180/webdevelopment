@@ -1,0 +1,50 @@
+<!doctype html>
+<html ng-app="ngOughts">
+	<head>
+		<title>Tut</title>
+		<style type="text/css">
+			table {
+				margin: 10px;
+				border: darkblue 1px solid;
+			}
+			tr {
+				margin: 2px;
+			}
+			td {
+				border: darkblue 1px solid;
+				width: 60px;
+				height: 60px;
+				text-align: center;
+				font-size:28px;
+			}
+			.winning {
+				background-color: green;
+				color: white;
+			}
+
+		</style>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+
+	<body ng-controller="BoardCtrl">
+		<h1 class="display-3 " style="color: darkred ; text-align: center">Tic Tac Toe</h1>
+	</div>
+		<div class="container col-md-3" style="position : relative ;left : 550px; top: 20%;" >
+
+		<table>
+			<tr ng-repeat="row in board.grid">
+				<td ng-repeat="cell in row" ng-click="board.playCell(cell)" ng-class="{'winning': cell.winning}">
+					<span ng-bind="cell.marker"></span>
+				</td>	
+			</tr>
+		</table>
+			<h1 ng-show="board.won" style="color:darkgreen;" ng-cloak> Winner : {{board.winning_marker}} </h1>
+		<button ng-click="board.reset()"> New game</button>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+		</div>
+
+	</body>
+</html>
